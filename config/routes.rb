@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  '/' => "personal_informations#new"
+  devise_for :users
+  root to: "personal_informations#new"
 end
